@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Chess } from 'chess.js';
 import { Chessboard } from 'react-chessboard';
 import toast, { Toaster } from 'react-hot-toast';
@@ -57,7 +57,7 @@ export default function ChessBoardComponent() {
   const handlePieceDrop = (
     sourceSquare: string,
     targetSquare: string,
-    piece: string
+    //piece: string
   ): boolean => {
     if (gameOverMessage) return false;
     return makeMove(sourceSquare, targetSquare);
